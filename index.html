@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- BS5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- icon links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+       .card {
+      
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            color: white;
+            background-color: #f8f9fa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            border-radius: 15px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .card-body {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .card-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .btn-shop {
+            background-color: #ff007f;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .niv{
+          position: absolute;
+            top: 50%;
+           right: 110%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-align: center;
+         
+        }
+        a:hover{
+          color: black;
+        }
+        i{
+          cursor:pointer;
+        }
+        button:hover{
+          color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- First part -->
+    <div class="container-fluid p-4 " id="first">
+        <div>
+            <div class="d-flex justify-content-around  ">
+              <div class=" "><img src="./Images/flora-logo.png" alt="flora-logo" width="120px" id="logo" ></div>
+              <div class=" "></div>
+              <div class=" ">
+                <div id="home">
+                <ul class="nav">
+                   <li class="nav-item" id="ho"><a href="index.html" class="nav-link" style="color: black;" >Home</a></li>
+                   <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">
+                      Bouquets
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="/bouquets/tulip.html">Tulip Bouquets</a>
+                      <a class="dropdown-item" href="/bouquets/rose.html">Rose Bouquets</a>
+                      <a class="dropdown-item" href="/bouquets/yellow.html">Yellow Bouquets</a>
+                      <a class="dropdown-item" href="/bouquets/white.html">White Bouquets</a>
+                      <a class="dropdown-item" href="/bouquets/pink.html">Pink Bouquets</a>
+                      <a class="dropdown-item" href="/bouquets/red.html">Red Bouquets</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="/bouquets/all product.html">All Products</a>
+                    </div>
+                  </li>
+                    <!-- <li class="nav-item" id="ho"><a href="#" class="nav-link" style="color: black;" >Bouquets</a></li> -->
+                    <!-- <li class="nav-item"><a href="#" class="nav-link" style="color: black;" >Arrangements</a></li> -->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">
+                        Arrangements
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/arrangements/box.html">Box Rose</a>
+                        <a class="dropdown-item" href="/arrangements/shocked.html">Shocked Rose</a>
+                        <a class="dropdown-item" href="/arrangements/boxarrangement.html">Box Arrangement</a>
+                        <a class="dropdown-item" href="/arrangements/vasearrnagement.html">Vase Arrangement</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/arrangements/allproduct.html">All Products</a>
+                      </div>
+                    </li>
+                    <li class="nav-item"><a href="/plant/plant.html" class="nav-link" style="color: black;" >Plants</a></li>
+                    <li class="nav-item"><a href="orchid/orchid.html" class="nav-link" style="color: black;">Orchid</a></li>
+                    <li class="nav-item" style="padding-left: 30px; ">
+                      <div id="icon">
+                      <i class="fa-solid fa-magnifying-glass" style="color: aliceblue;">
+                      </i>
+                      </div>
+                      <li class="list-inline-item" style="padding-left: 10px;"> 
+                        <div id="icon">
+                        <i class="fa-solid fa-cart-shopping" style="color: white;"></i>
+                      </div></li>
+                      <li class="list-inline-item"><div style="padding-left: 50px; padding-top: 7px;" >
+                        <i class="fa-solid fa-bars" style="color: #d52687; font-size: 25px;" ></i>
+                      </div></li>
+                </ul>
+              </div>
+          </div>
+         </div>
+     </div>
+    </div>
+    </div>
+
+       <!-- second part -->
+
+       <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active card-img-overlay">
+        <img src="Images/First 1.png" alt="Los Angeles" class="d-block" style="width:40%">
+       <div class="text-dark niv" >
+        <h1>Special Smells </h1>
+        <h1>Special Bouquets</h1>
+        <p>Discover our top-related Flowers</p>
+        <a href="#" class="btn-shop">Shop Now →</a>
+       </div>
+      </div>
+      <div class="carousel-item card-img-overlay">
+        <img src="Images/Thi 2.png" alt="Chicago" class="d-block" style="width:40%">
+        <div class="text-dark niv" >
+          <h1>Special Smells </h1>
+          <h1>Special Bouquets</h1>
+          <p>Discover our top-related Flowers</p>
+          <a href="#" class="btn-shop">Shop Now →</a>
+         </div>
+      </div>
+      <div class="carousel-item card-img-overlay">
+        <img src="Images/First 3.png" alt="New York" class="d-block" style="width:40%">
+        <div class="text-dark niv" >
+          <h1>Special Smells </h1>
+          <h1>Special Bouquets</h1>
+          <p>Discover our top-related Flowers</p>
+          <a href="#" class="btn-shop">Shop Now →</a>
+         </div>
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  
+<!-- Third part -->
+<div class="container my-5" >
+  <div class="row">
+      <div class="col-md-4 mb-4">
+          <div class="card"style="background-color: rgb(252, 221, 226);">
+              <img src="Images/Thi 1.png" alt="Private Events">
+              <div class="card-body">
+                  <p>10% Discount Offer</p>
+                  <h3 class="card-text">Private Events</h3>
+                  <a href="#" class="btn-shop">Shop Now →</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+          <div class="card" style="background-color: rgb(252, 221, 226);">
+              <img src="Images/Thi 2.png" alt="Flora">
+              <div class="card-body">
+                <p>10% Discount Offer</p>
+                  <!-- <h5 class="card-title">10% Discount Offer</h5> -->
+                  <h3 class="card-text">Flora</h3>
+                  <a href="#" class="btn-shop">Shop Now →</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card" style="background-color: rgb(252, 221, 226);">
+            <img src="Images/Thi 4.png" alt="Private Events">
+            <div class="card-body">
+              <p>10% Discount Offer</p>
+                <h3 class="card-text">Private Events</h3>
+                <a href="#" class="btn-shop" >Shop Now →</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+  <!-- fourth part -->
+   
+<!-- fifth part -->
+<div class="container">
+  <h2 class="feature-title">Feature Product</h2>
+  <p class="text-center">Special products for the summer season are here.</p>
+  
+  <div class="row">
+      <div class="col-md-3">
+          <div class="product-card">
+             <a href="flower/sec4.html"> <img src="Images/Sec 4.png" class="product-img" alt="Red Rose Bouquets"></a>
+              <p class="product-name">Red Rose Bouquet</p>
+              <p class="product-price">$1,000.00</p>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="product-card">
+             <a href="flower/sec8.html"> <img src="Images/Sec 8.png" class="product-img" alt="Red Rose Bouquets"></a>
+              <p class="product-name">Red Rose Bouquets</p>
+              <p class="product-price">$1,500.00</p>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="product-card">
+             <a href="flower/sec7.html"> <img src="Images/Sec 7.png" class="product-img" alt="Special Rose Bouquet"></a>
+              <p class="product-name">Special Rose Bouquet</p>
+              <p class="product-price">$2,000.00</p>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="product-card">
+             <a href="flower/sec6.html"> <img src="Images/Sec 6.png" class="product-img" alt="Tulip Bouquets"></a>
+              <p class="product-name">Tulip Bouquets</p>
+              <p class="product-price">$2,800.00</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+          <div class="product-card">
+           <a href="flower/sec11.html"> <img src="Images/Sec 11.png" class="product-img" alt="Red Rose Bouquet"></a>
+              <p class="product-name">Red Rose Bouquet</p>
+              <p class="product-price">$1,000.00</p>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="product-card">
+            <a href="flower/sec12.html">  <img src="Images/Sec 12.png" class="product-img" alt="Red Rose Bouquets"></a>
+              <p class="product-name">Red Rose Bouquets</p>
+              <p class="product-price">$1,500.00</p>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="product-card">
+             <a href="flower/sec13.html"> <img src="Images/Sec 13.png" class="product-img" alt="Special Rose Bouquet"></a>
+              <p class="product-name">Special Rose Bouquet</p>
+              <p class="product-price">$2,000.00</p>
+          </div>
+      </div>
+      <div class="col-md-3">
+        <div class="product-card">
+           <a href="flower/sec1.html"><img src="Images/Sec 1.png" class="product-img" alt="Special Rose Bouquet"></a>
+            <p class="product-name">Special Rose Bouquet</p>
+            <p class="product-price">$2,000.00</p>
+        </div>
+    </div>
+      
+  </div>
+</div>
+
+<!-- final part -->
+<div class="container">
+  <h2 class="feature-title">Newly Added Products</h2>
+  <p class="text-center">Checkout out Latest Products</p>
+  
+  <div class="row">
+      <div class="col-md-3">
+          <div class="product-card">
+             <a href="flower/plant 1.html"> <img src="Images/plant 1.png" class="product-img" alt="Red Rose Bouquet"></a>
+              <p class="product-name">Red Rose Bouquet</p>
+              <p class="product-price">$1,000.00</p>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="product-card">
+             <a href="flower/plant2.html"> <img src="Images/plant 2.png" class="product-img" alt="Red Rose Bouquets"></a>
+              <p class="product-name">Red Rose Bouquets</p>
+              <p class="product-price">$1,500.00</p>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="product-card">
+              <a href="flower/plant3.html"><img src="Images/plant 3.png" class="product-img" alt="Special Rose Bouquet"></a>
+              <p class="product-name">Special Rose Bouquet</p>
+              <p class="product-price">$2,000.00</p>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="product-card">
+             <a href="flower/plant4.html"> <img src="Images/plant 4.png" class="product-img" alt="Tulip Bouquets"></a>
+              <p class="product-name">Tulip Bouquets</p>
+              <p class="product-price">$2,800.00</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<!-- footer -->
+
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+        <hr>
+          <!-- Logo and Contact Info -->
+          <div class="col-md-3">
+              <img src="Images/flora-logo.png" alt="" width="140px">
+              <p><i class="fas fa-phone"></i> +1 (234) 567 89 10</p>
+              <p><i class="fas fa-envelope"></i> example@example.com</p>
+              <div class="social-icons">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-twitter"></i>
+              </div>
+          </div>
+          
+          <!-- Popular Categories -->
+          <div class="col-md-3">
+              <h5>Popular Categories</h5>
+              <p>Bouquets</p>
+              <p>Arrangements</p>
+              <p>Plants</p>
+              <p>White Bouquets</p>
+              <p>Box Arrangement</p>
+              <p>Rose Bouquets</p>
+              <p>Box Rose</p>
+          </div>
+          
+          <!-- Quick Links -->
+          <div class="col-md-3">
+              <h5>Quick Links</h5>
+              <p>My Account</p>
+              <p>Wishlist</p>
+              <p>Cart</p>
+              <p>Checkout</p>
+              <p>Get To Know Us</p>
+              <p>Useful Information</p>
+              <p>Contact Us</p>
+          </div>
+          
+          <!-- Newsletter -->
+          <div class="col-md-3">
+              <h5>Join Our Newsletter</h5>
+              <p>Subscribe to be informed about our services and products.</p>
+              <input type="email" class="newsletter-input" placeholder="Your Email Address">
+              <button class="subscribe-btn mt-2" style="background-color: #d52687;">Subscribe →</button>
+             
+          </div>
+      </div>
+      <hr>
+      <p class="text-start">&copy; 2024 Flora - All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
